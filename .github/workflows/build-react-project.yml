@@ -18,13 +18,12 @@ jobs:
         with:
           node-version: 14 # You can specify the version you need
  
-      - name: Change working directory to calculator-app
-        run: cd calculator-app
- 
       - name: Install dependencies
+        working-directory: calculator-app # Specify the working directory
         run: npm install
  
       - name: Build React app
+        working-directory: calculator-app # Specify the working directory
         run: npm run build
  
       - name: Archive build folder
