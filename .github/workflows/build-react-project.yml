@@ -35,4 +35,4 @@ jobs:
 
       - name: Deploy static site to S3 bucket
         working-directory: calculator-app
-        run: aws s3 sync ./build/ s3://sammypsbucket --delete
+        run: aws s3 sync ./build/ s3://calc.sammypgaddis.com --delete
